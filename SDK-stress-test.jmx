@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Order create prameter" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="imapUrl" elementType="Argument">
+            <stringProp name="Argument.name">imapUrl</stringProp>
+            <stringProp name="Argument.value">http://imapi-1-64.test.alipay.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="partner" elementType="Argument">
+            <stringProp name="Argument.name">partner</stringProp>
+            <stringProp name="Argument.value">21884000000000B6</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="service" elementType="Argument">
+            <stringProp name="Argument.name">service</stringProp>
+            <stringProp name="Argument.value">ipay.itrade.escrow.create</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="prod_code" elementType="Argument">
+            <stringProp name="Argument.name">prod_code</stringProp>
+            <stringProp name="Argument.value">IPAY_ESCROW_LOADTEST</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="partner_sub_type" elementType="Argument">
+            <stringProp name="Argument.name">partner_sub_type</stringProp>
+            <stringProp name="Argument.value">208800000B</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="buyerAdminSeq" elementType="Argument">
+            <stringProp name="Argument.name">buyerAdminSeq</stringProp>
+            <stringProp name="Argument.value">201501080012</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="buyerLoginId" elementType="Argument">
+            <stringProp name="Argument.name">buyerLoginId</stringProp>
+            <stringProp name="Argument.value">10000tests0012</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="buyerCardNo" elementType="Argument">
+            <stringProp name="Argument.name">buyerCardNo</stringProp>
+            <stringProp name="Argument.value">21882000000000D1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="sellerAdminSeq" elementType="Argument">
+            <stringProp name="Argument.name">sellerAdminSeq</stringProp>
+            <stringProp name="Argument.value">201501080011</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="sellerLoginId" elementType="Argument">
+            <stringProp name="Argument.name">sellerLoginId</stringProp>
+            <stringProp name="Argument.value">10000tests0011</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="sellerCardNo" elementType="Argument">
+            <stringProp name="Argument.name">sellerCardNo</stringProp>
+            <stringProp name="Argument.value">21882000000000B9</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="threadNum" elementType="Argument">
+            <stringProp name="Argument.name">threadNum</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="activityIds" elementType="Argument">
+            <stringProp name="Argument.name">activityIds</stringProp>
+            <stringProp name="Argument.value">loadtest</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Order payment prameter" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="intent_pay_cur" elementType="Argument">
+            <stringProp name="Argument.name">intent_pay_cur</stringProp>
+            <stringProp name="Argument.value">USD</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="locale" elementType="Argument">
+            <stringProp name="Argument.name">locale</stringProp>
+            <stringProp name="Argument.value">en_US</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="sub_biztype" elementType="Argument">
+            <stringProp name="Argument.name">sub_biztype</stringProp>
+            <stringProp name="Argument.value">trade</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="biztype" elementType="Argument">
+            <stringProp name="Argument.name">biztype</stringProp>
+            <stringProp name="Argument.value">ae</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="multi_cur" elementType="Argument">
+            <stringProp name="Argument.name">multi_cur</stringProp>
+            <stringProp name="Argument.value">T</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="charset" elementType="Argument">
+            <stringProp name="Argument.name">charset</stringProp>
+            <stringProp name="Argument.value">UTF-8</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="source" elementType="Argument">
+            <stringProp name="Argument.name">source</stringProp>
+            <stringProp name="Argument.value">android_3.9.0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="umid" elementType="Argument">
+            <stringProp name="Argument.name">umid</stringProp>
+            <stringProp name="Argument.value">test</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ip" elementType="Argument">
+            <stringProp name="Argument.name">ip</stringProp>
+            <stringProp name="Argument.value">123.129.21.23</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="pay_service" elementType="Argument">
+            <stringProp name="Argument.name">pay_service</stringProp>
+            <stringProp name="Argument.value">iappcashier.security.pay</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="markuid" elementType="Argument">
+            <stringProp name="Argument.name">markuid</stringProp>
+            <stringProp name="Argument.value">8D</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Credit card" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="firstName" elementType="Argument">
+            <stringProp name="Argument.name">firstName</stringProp>
+            <stringProp name="Argument.value">FIRSTNAME</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="lastName" elementType="Argument">
+            <stringProp name="Argument.name">lastName</stringProp>
+            <stringProp name="Argument.value">LASTANME</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="bankCardNo" elementType="Argument">
+            <stringProp name="Argument.name">bankCardNo</stringProp>
+            <stringProp name="Argument.value">4182382022337913</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="expirationMonth" elementType="Argument">
+            <stringProp name="Argument.name">expirationMonth</stringProp>
+            <stringProp name="Argument.value">09</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="expirationYear" elementType="Argument">
+            <stringProp name="Argument.name">expirationYear</stringProp>
+            <stringProp name="Argument.value">19</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="securitycode" elementType="Argument">
+            <stringProp name="Argument.name">securitycode</stringProp>
+            <stringProp name="Argument.value">233</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="channelType" elementType="Argument">
+            <stringProp name="Argument.name">channelType</stringProp>
+            <stringProp name="Argument.value">wp</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1421812907000</longProp>
+        <longProp name="ThreadGroup.end_time">1421812907000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="cashAmount" enabled="true">
+          <stringProp name="maximumValue">99</stringProp>
+          <stringProp name="minimumValue">1</stringProp>
+          <stringProp name="outputFormat">00</stringProp>
+          <boolProp name="perThread">true</boolProp>
+          <stringProp name="randomSeed"></stringProp>
+          <stringProp name="variableName">cashAmount</stringProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="couponAmount" enabled="true">
+          <stringProp name="variableName">couponAmount</stringProp>
+          <stringProp name="outputFormat">00</stringProp>
+          <stringProp name="minimumValue">1</stringProp>
+          <stringProp name="maximumValue">99</stringProp>
+          <stringProp name="randomSeed"></stringProp>
+          <boolProp name="perThread">true</boolProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller" enabled="true"/>
+        <hashTree>
+          <JavaSampler guiclass="JavaTestSamplerGui" testclass="JavaSampler" testname="Create trade order" enabled="true">
+            <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="imapUrl" elementType="Argument">
+                  <stringProp name="Argument.name">imapUrl</stringProp>
+                  <stringProp name="Argument.value">${imapUrl}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="partner" elementType="Argument">
+                  <stringProp name="Argument.name">partner</stringProp>
+                  <stringProp name="Argument.value">${partner}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="service" elementType="Argument">
+                  <stringProp name="Argument.name">service</stringProp>
+                  <stringProp name="Argument.value">${service}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="prod_code" elementType="Argument">
+                  <stringProp name="Argument.name">prod_code</stringProp>
+                  <stringProp name="Argument.value">${prod_code}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="partner_sub_type" elementType="Argument">
+                  <stringProp name="Argument.name">partner_sub_type</stringProp>
+                  <stringProp name="Argument.value">${partner_sub_type}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="cashAmount" elementType="Argument">
+                  <stringProp name="Argument.name">cashAmount</stringProp>
+                  <stringProp name="Argument.value">${cashAmount}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="couponAmount" elementType="Argument">
+                  <stringProp name="Argument.name">couponAmount</stringProp>
+                  <stringProp name="Argument.value">${couponAmount}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="buyerAdminSeq" elementType="Argument">
+                  <stringProp name="Argument.name">buyerAdminSeq</stringProp>
+                  <stringProp name="Argument.value">${buyerAdminSeq}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="buyerLoginId" elementType="Argument">
+                  <stringProp name="Argument.name">buyerLoginId</stringProp>
+                  <stringProp name="Argument.value">${buyerLoginId}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="buyerCardNo" elementType="Argument">
+                  <stringProp name="Argument.name">buyerCardNo</stringProp>
+                  <stringProp name="Argument.value">${buyerCardNo}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="sellerAdminSeq" elementType="Argument">
+                  <stringProp name="Argument.name">sellerAdminSeq</stringProp>
+                  <stringProp name="Argument.value">${sellerAdminSeq}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="sellerLoginId" elementType="Argument">
+                  <stringProp name="Argument.name">sellerLoginId</stringProp>
+                  <stringProp name="Argument.value">${sellerLoginId}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="sellerCardNo" elementType="Argument">
+                  <stringProp name="Argument.name">sellerCardNo</stringProp>
+                  <stringProp name="Argument.value">${sellerCardNo}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="threadNum" elementType="Argument">
+                  <stringProp name="Argument.name">threadNum</stringProp>
+                  <stringProp name="Argument.value">${threadNum}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="activityIds" elementType="Argument">
+                  <stringProp name="Argument.name">activityIds</stringProp>
+                  <stringProp name="Argument.value">${activityIds}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="classname">com.alipay.test.stresstest.CreateTradeOrder</stringProp>
+          </JavaSampler>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="v_trade_no_list" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">message</stringProp>
+              <stringProp name="RegexExtractor.refname">v_trade_no_list</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;tradeNo&quot;:\&quot;(.*?)\&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">0</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="v_totalAmount" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">message</stringProp>
+              <stringProp name="RegexExtractor.refname">v_totalAmount</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;totalAmount&quot;:\&quot;(.*?)\&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">0</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="v_request_dt" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">message</stringProp>
+              <stringProp name="RegexExtractor.refname">v_request_dt</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;requestDt&quot;:\&quot;(.*?)\&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">0</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <JavaSampler guiclass="JavaTestSamplerGui" testclass="JavaSampler" testname="Launch payment" enabled="true">
+            <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="intent_pay_cur" elementType="Argument">
+                  <stringProp name="Argument.name">intent_pay_cur</stringProp>
+                  <stringProp name="Argument.value">${intent_pay_cur}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="intent_pay_amount" elementType="Argument">
+                  <stringProp name="Argument.name">intent_pay_amount</stringProp>
+                  <stringProp name="Argument.value">${v_totalAmount}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="locale" elementType="Argument">
+                  <stringProp name="Argument.name">locale</stringProp>
+                  <stringProp name="Argument.value">${locale}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="trade_no_list" elementType="Argument">
+                  <stringProp name="Argument.name">trade_no_list</stringProp>
+                  <stringProp name="Argument.value">${v_trade_no_list}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="card_no" elementType="Argument">
+                  <stringProp name="Argument.name">card_no</stringProp>
+                  <stringProp name="Argument.value">${buyerCardNo}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="prod_code" elementType="Argument">
+                  <stringProp name="Argument.name">prod_code</stringProp>
+                  <stringProp name="Argument.value">${prod_code}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="sub_biztype" elementType="Argument">
+                  <stringProp name="Argument.name">sub_biztype</stringProp>
+                  <stringProp name="Argument.value">${sub_biztype}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="partner" elementType="Argument">
+                  <stringProp name="Argument.name">partner</stringProp>
+                  <stringProp name="Argument.value">${partner}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="biztype" elementType="Argument">
+                  <stringProp name="Argument.name">biztype</stringProp>
+                  <stringProp name="Argument.value">${biztype}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="multi_cur" elementType="Argument">
+                  <stringProp name="Argument.name">multi_cur</stringProp>
+                  <stringProp name="Argument.value">${multi_cur}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="charset" elementType="Argument">
+                  <stringProp name="Argument.name">charset</stringProp>
+                  <stringProp name="Argument.value">${charset}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="request_dt" elementType="Argument">
+                  <stringProp name="Argument.name">request_dt</stringProp>
+                  <stringProp name="Argument.value">${v_request_dt}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="source" elementType="Argument">
+                  <stringProp name="Argument.name">source</stringProp>
+                  <stringProp name="Argument.value">${source}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="umid" elementType="Argument">
+                  <stringProp name="Argument.name">umid</stringProp>
+                  <stringProp name="Argument.value">${umid}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="ip" elementType="Argument">
+                  <stringProp name="Argument.name">ip</stringProp>
+                  <stringProp name="Argument.value">${ip}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="service" elementType="Argument">
+                  <stringProp name="Argument.name">service</stringProp>
+                  <stringProp name="Argument.value">${pay_service}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="classname">com.alipay.test.stresstest.LaunchPayment</stringProp>
+          </JavaSampler>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="v_sessionId" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">message</stringProp>
+              <stringProp name="RegexExtractor.refname">v_sessionId</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;sessionId&quot;:\&quot;(.*?)\&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">0</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="v_tid" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">message</stringProp>
+              <stringProp name="RegexExtractor.refname">v_tid</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;tid&quot;:\&quot;(.*?)\&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">0</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <JavaSampler guiclass="JavaTestSamplerGui" testclass="JavaSampler" testname="Pay by credit card" enabled="true">
+            <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="firstName" elementType="Argument">
+                  <stringProp name="Argument.name">firstName</stringProp>
+                  <stringProp name="Argument.value">${firstName}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="lastName" elementType="Argument">
+                  <stringProp name="Argument.name">lastName</stringProp>
+                  <stringProp name="Argument.value">${lastName}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="bankCardNo" elementType="Argument">
+                  <stringProp name="Argument.name">bankCardNo</stringProp>
+                  <stringProp name="Argument.value">${bankCardNo}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="expirationMonth" elementType="Argument">
+                  <stringProp name="Argument.name">expirationMonth</stringProp>
+                  <stringProp name="Argument.value">${expirationMonth}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="expirationYear" elementType="Argument">
+                  <stringProp name="Argument.name">expirationYear</stringProp>
+                  <stringProp name="Argument.value">${expirationYear}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="securitycode" elementType="Argument">
+                  <stringProp name="Argument.name">securitycode</stringProp>
+                  <stringProp name="Argument.value">${securitycode}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="channelType" elementType="Argument">
+                  <stringProp name="Argument.name">channelType</stringProp>
+                  <stringProp name="Argument.value">${channelType}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="sessionId" elementType="Argument">
+                  <stringProp name="Argument.name">sessionId</stringProp>
+                  <stringProp name="Argument.value">${v_sessionId}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="tid" elementType="Argument">
+                  <stringProp name="Argument.name">tid</stringProp>
+                  <stringProp name="Argument.value">${v_tid}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="classname">com.alipay.test.stresstest.MakePayment</stringProp>
+          </JavaSampler>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
